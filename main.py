@@ -3,7 +3,6 @@
 # PROJECT FUNCTIONALITY - A text-based Python program implementation of the Tic-Tac-Toe game.
 
 import numpy as np
-from collections import Counter
 
 cells = [num + 1 for num in range(9)]
 
@@ -43,7 +42,7 @@ def prompt_player_move(player_id):
 
 
 def a_win(player_id):
-    """Checks if any of both players has won the game and returns a boolean True if there is."""
+    """Checks if any of the players has won the game and returns a boolean True if so."""
     player_icon = np.where(player_id == 1, "X", "O")
     if (cells[0] == cells[1] == cells[2] == player_icon or cells[3] == cells[4] == cells[5] == player_icon or \
         cells[6] == cells[7] == cells[8] == player_icon or cells[0] == cells[3] == cells[6] == player_icon or \
