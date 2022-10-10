@@ -43,7 +43,7 @@ def prompt_player_move(player_id):
 
 
 def a_win(player_id):
-    """Checks if any of both players has won the game and returns a boolean True is there is."""
+    """Checks if any of both players has won the game and returns a boolean True if there is."""
     player_icon = np.where(player_id == 1, "X", "O")
     if (cells[0] == cells[1] == cells[2] == player_icon or cells[3] == cells[4] == cells[5] == player_icon or \
         cells[6] == cells[7] == cells[8] == player_icon or cells[0] == cells[3] == cells[6] == player_icon or \
