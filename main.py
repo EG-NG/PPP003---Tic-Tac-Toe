@@ -56,7 +56,7 @@ def a_win(player_id):
 
 def a_draw():
     """Checks for a draw in the game and returns a boolean True if there is."""
-    # Implemented with Numpy functions; others ways are possible.
+    # Implemented with Numpy functions
     array = np.array(cells)                 # with numpy array(), create an array from "cells"
     unique_values = np.unique(array)        # with numpy unique(), get the unique values of "array" by removing duplicate values
 
